@@ -22,8 +22,10 @@ class IndexController
         Response $response,
         TwigEnvironment $twig
     ) {
-        return $response->getBody()->write(
+        $response->getBody()->write(
             $twig->render('index.html.twig')
         );
+
+        return $response;
     }
 }
