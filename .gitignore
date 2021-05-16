@@ -1,0 +1,35 @@
+
+# Composer vendor
+vendor/*
+
+# Migrations
+migrations/*
+!migrations/production
+
+# IDE
+.settings
+/.vscode
+nbproject/private/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Logs
+*.log
+php_errors.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# .js package managers
+bower_components/
+node_modules/
+jspm_packages/
