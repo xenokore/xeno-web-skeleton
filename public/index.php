@@ -6,9 +6,6 @@
  */
 
 require_once __DIR__ . '/../app/bootstrap.php';
-
-$router = $app->getSlimRouter();
-
-include __DIR__ . '/../app/routes.php';
+require_once __DIR__ . '/../app/router.php';
 
 $router->run();
