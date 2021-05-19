@@ -1,3 +1,5 @@
+# Environment variables file
+.env
 
 # Composer vendor
 vendor/*
