@@ -6,8 +6,6 @@
  */
 
 return [
-    '.env' => \realpath(__DIR__ . '/../.env'),
-
     'src_dir'        => \realpath(__DIR__ . '/../src'),
     'container_dir'  => \realpath(__DIR__ . '/../app/container'),
     'views_dir'      => \realpath(__DIR__ . '/../views'),
