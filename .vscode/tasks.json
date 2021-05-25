@@ -4,6 +4,15 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Start REPL (PsySH)",
+            "type": "shell",
+            "command": "./vendor/bin/psysh",
+            "windows": {
+                "command": "php ./vendor/bin/psysh"
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "Clear cache",
             "type": "shell",
             "command": "./console cache:clear",
