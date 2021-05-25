@@ -1,0 +1,55 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clear cache",
+            "type": "shell",
+            "command": "./console cache:clear",
+            "windows": {
+                "command": "php .\\console cache:clear"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Create controller",
+            "type": "shell",
+            "command": "./console controller:create ${input:controllerName}",
+            "windows": {
+                "command": "php .\\console controller:create ${input:controllerName}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Create unit test",
+            "type": "shell",
+            "command": "./console test:create ${input:testName}",
+            "windows": {
+                "command": "php .\\console test:create ${input:testName}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run all tests",
+            "type": "shell",
+            "command": "./vendor/bin/phpunit ./tests",
+            "windows": {
+                "command": "php ./vendor/bin/phpunit ./tests"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "controllerName",
+            "description": "The name of the new controller. Should not be affixed with \"Controller\".",
+            "type": "promptString"
+        },
+        {
+            "id": "testName",
+            "description": "The name of the new unit test. Should not be affixed with \"Test\".",
+            "type": "promptString"
+        }
+    ]
+}
