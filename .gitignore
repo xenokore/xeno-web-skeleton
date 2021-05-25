@@ -2,21 +2,24 @@
 .env
 
 # Composer vendor
-vendor/*
+vendor/
 
 # Migrations
-migrations/*
+migrations/
 !migrations/production
 
 # IDE
 .settings
-/.vscode
+.vscode/
 nbproject/private/
 nbbuild/
 nbdist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
+
+# INCLUDE VSCode tasks.json
+!.vscode/tasks.json
 
 # Logs
 *.log
