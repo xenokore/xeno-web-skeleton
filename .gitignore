@@ -5,12 +5,12 @@
 vendor/
 
 # Migrations
-migrations/
+migrations/*
 !migrations/production
 
 # IDE
+.vscode/*
 .settings
-.vscode/
 nbproject/private/
 nbbuild/
 nbdist/
