@@ -12,6 +12,7 @@ return [
     'controller_dir' => \realpath(__DIR__ . '/../controllers'),
     'cache_dir'      => \realpath(__DIR__ . '/../cache'),
     'vendor_dir'     => \realpath(__DIR__ . '/../vendor'),
+    'tests_dir'      => \realpath(__DIR__ . '/../tests'),
 
     'load_vendor_components' => true,
 
