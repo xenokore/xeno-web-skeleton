@@ -9,6 +9,7 @@ use App\Twig\TwigProvider;
 use Xenokore\App\Twig\TwigProviderInterface;
 
 use Xenokore\Logger\Logger;
+use Psr\Log\LoggerInterface;
 
 return [
 
